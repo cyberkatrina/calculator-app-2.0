@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   width: 50%;
   height: 75%;
@@ -6,6 +10,7 @@ body {
 
 .grid {
   display: grid;
+  grid-template-rows: min-content auto;
   grid-template-areas: 
   "input input   input     input"
   "plus  minus   times     divide"
@@ -15,20 +20,22 @@ body {
   "num0  decimal  clear    equal";
   height: 100vh;
   width: 100vw;
+  
 }
 
 button {
-  font-size: 35px;
+  font-size: 50px;
 }
 
 .input {
   grid-area: input;
-  font-size: 50pt;
+  font-size: 150pt;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
   padding-right: 30pt;
-  height: 100px;
+  height: 100%;
+  min-height: 175pt;
 }
 
 .plus {
