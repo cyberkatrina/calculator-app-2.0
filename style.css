@@ -1,5 +1,101 @@
 body {
-  margin: 20% auto;
   width: 50%;
   height: 75%;
+  margin: 0;
 }
+
+.grid {
+  display: grid;
+  grid-template-areas: 
+  "input input   input     input"
+  "plus  minus   times     divide"
+  "num7  num8    num9      modulo"
+  "num4   num5   num6      equal"
+  "num1   num2   num3      equal"
+  "num0  decimal  clear    equal";
+  height: 100vh;
+  width: 100vw;
+}
+
+button {
+  font-size: 35px;
+}
+
+.input {
+  grid-area: input;
+  font-size: 50pt;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 30pt;
+  height: 100px;
+}
+
+.plus {
+  grid-area: plus;
+}
+
+.minus {
+  grid-area: minus;
+}
+
+.times {
+  grid-area: times;
+}
+
+.divide {
+  grid-area: divide;
+}
+
+.modulo {
+  grid-area: modulo;
+}
+
+.num0 {
+  grid-area: num0;
+}
+
+.num1 {
+  grid-area: num1;
+}
+
+.num2 {
+  grid-area: num2;
+}
+
+.num3 {
+  grid-area: num3;
+}
+
+.num4 {
+  grid-area: num4;
+}
+
+.num5 {
+  grid-area: num5;
+}
+
+.num6 {
+  grid-area: num6;
+}
+
+.num7 {
+  grid-area: num7;
+}
+
+.num8 {
+  grid-area: num8;
+}
+
+.num9 {
+  grid-area: num9;
+}
+
+.decimal {
+  grid-area: decimal;
+}
+
+.equal {
+  grid-area: equal;
+}
+
